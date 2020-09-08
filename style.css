@@ -1,0 +1,52 @@
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background: #000;
+    color: #fff;
+    font-family: 'Cozi Azure';
+}
+
+.slider{
+    width: 100%;
+    height: 100vh;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.rgbKineticSlider{
+    display: block;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+canvas{
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+}
+nav a {
+    text-decoration: none;
+    position: absolute;
+    top: 46vh;
+    z-index: 1;
+    padding: 20px;
+    transition: .3s;
+    background: #000;
+    color: #fff;
+
+}
+ nav a.next {
+     right: 10vw;
+ }
+ nav a.prev {
+     left: 10vw;
+ }
+ @media screen and (max-width: 52em){
+     nav a {
+         top: auto;
+         bottom: 3rem;
+     }
+ }
